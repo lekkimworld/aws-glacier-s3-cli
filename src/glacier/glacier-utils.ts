@@ -6,7 +6,7 @@ import {
     InitiateJobCommand,
     GetJobOutputCommandOutput,
 } from "@aws-sdk/client-glacier";
-import { ReadStream, writeFileSync } from "fs";
+import { ReadStream } from "fs";
 import constants from "../constants";
 import commandLineUsage from "command-line-usage";
 import { writeFile } from "fs/promises";
