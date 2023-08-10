@@ -1,9 +1,8 @@
 import {config as dotenv_config} from "dotenv";
 dotenv_config();
+import constants from "../constants";
 import {getBuckets, getClient} from "./s3-utils";
 import {ListObjectsCommand} from "@aws-sdk/client-s3";
-
-import constants from "../constants";
 import parseCmd from "command-line-args";
 import { cliCheckHelp, cliErrorAndExit } from "../glacier/glacier-utils";
 
